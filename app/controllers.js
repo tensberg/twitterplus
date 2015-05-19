@@ -27,6 +27,7 @@ twitterplusControllers.controller('ShowStreamsCtrl', ['$scope', '$rootScope', 'T
                 
                 var reload = function() {
                       $scope.twitterStream = Twitter.get({twitter:$scope.twitter});
+                      $scope.googleplusStream = GooglePlus.get({googleplus:$scope.googleplus});
                       };
                       
                 $scope.reload = reload;

@@ -1,0 +1,353 @@
+{
+ "kind": "plus#activityFeed",
+ "etag": "\"RqKWnRU4WW46-6W3rWhLR9iFZQM/rF_A2uP_ku02CmA2MdeZNCjCrSU\"",
+ "nextPageToken": "Cg0QhMOFgcLNxQIgACgBEhQIABCoirnkq7_FAhiQ4Znu3OC9AhgCIBQ",
+ "title": "Google+ List of Activities for Collection PUBLIC",
+ "updated": "2015-05-13T18:25:33.001Z",
+ "items": [
+  {
+   "kind": "plus#activity",
+   "etag": "\"RqKWnRU4WW46-6W3rWhLR9iFZQM/-Jr1UwqamDDwWWnz_eq1a22PqwE\"",
+   "title": "",
+   "published": "2015-05-13T18:25:33.001Z",
+   "updated": "2015-05-13T18:25:33.001Z",
+   "id": "z13gxjbphpathln4k04ciddjhwrgsnu5uxk0k",
+   "url": "https://plus.google.com/+MichaelKoch0/posts/RBnz7XNR9XW",
+   "actor": {
+    "id": "106550818727370453007",
+    "displayName": "Michael Koch",
+    "url": "https://plus.google.com/106550818727370453007",
+    "image": {
+     "url": "https://lh3.googleusercontent.com/-DVexAMJSYYY/AAAAAAAAAAI/AAAAAAAAA6w/AHDxvkrL9lE/photo.jpg?sz=50"
+    }
+   },
+   "verb": "post",
+   "object": {
+    "objectType": "note",
+    "content": "",
+    "url": "https://plus.google.com/+MichaelKoch0/posts/RBnz7XNR9XW",
+    "replies": {
+     "totalItems": 0,
+     "selfLink": "https://content.googleapis.com/plus/v1/activities/z13gxjbphpathln4k04ciddjhwrgsnu5uxk0k/comments"
+    },
+    "plusoners": {
+     "totalItems": 1,
+     "selfLink": "https://content.googleapis.com/plus/v1/activities/z13gxjbphpathln4k04ciddjhwrgsnu5uxk0k/people/plusoners"
+    },
+    "resharers": {
+     "totalItems": 0,
+     "selfLink": "https://content.googleapis.com/plus/v1/activities/z13gxjbphpathln4k04ciddjhwrgsnu5uxk0k/people/resharers"
+    },
+    "attachments": [
+     {
+      "objectType": "article",
+      "displayName": "Humble Maker Book Bundle",
+      "content": "Learning how to make stuff is made easy with the Humble Maker Book Bundle",
+      "url": "https://www.humblebundle.com/books?maker_bookbundle",
+      "image": {
+       "url": "https://lh3.googleusercontent.com/proxy/an0M_e3rwuh1bDSDcjtjsLxgx8qy1liOXCNsfxw7Os3VXM957DdM1WJCqR15Ac1GxEv6i2vjrCvtAvPaZlivvmcZ2JqmQ7_c78BeKHrk0_wvNEFCQaK9CaKgS4vmT-qrJMIpR7T0eaEtgTTqOhHReh1m=w506-h303",
+       "type": "image/jpeg",
+       "height": 303,
+       "width": 506
+      },
+      "fullImage": {
+       "url": "https://humblebundle-a.akamaihd.net/misc/files/hashed/ebbcf8a9ec18971f2c3ce034d524dd75f957d7c4.jpg",
+       "type": "image/jpeg"
+      }
+     }
+    ]
+   },
+   "provider": {
+    "title": "Google+"
+   },
+   "access": {
+    "kind": "plus#acl",
+    "description": "Public",
+    "items": [
+     {
+      "type": "public"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "plus#activity",
+   "etag": "\"RqKWnRU4WW46-6W3rWhLR9iFZQM/7JKIL_hp26n9HyvPP0jWbuqKIFE\"",
+   "title": "",
+   "published": "2015-04-14T18:46:41.362Z",
+   "updated": "2015-04-14T18:46:41.362Z",
+   "id": "z12st5cqekb4ujkbv04ciddjhwrgsnu5uxk0k",
+   "url": "https://plus.google.com/+MichaelKoch0/posts/j4tXpZBYTdi",
+   "actor": {
+    "id": "106550818727370453007",
+    "displayName": "Michael Koch",
+    "url": "https://plus.google.com/106550818727370453007",
+    "image": {
+     "url": "https://lh3.googleusercontent.com/-DVexAMJSYYY/AAAAAAAAAAI/AAAAAAAAA6w/AHDxvkrL9lE/photo.jpg?sz=50"
+    }
+   },
+   "verb": "post",
+   "object": {
+    "objectType": "note",
+    "content": "",
+    "url": "https://plus.google.com/+MichaelKoch0/posts/j4tXpZBYTdi",
+    "replies": {
+     "totalItems": 0,
+     "selfLink": "https://content.googleapis.com/plus/v1/activities/z12st5cqekb4ujkbv04ciddjhwrgsnu5uxk0k/comments"
+    },
+    "plusoners": {
+     "totalItems": 0,
+     "selfLink": "https://content.googleapis.com/plus/v1/activities/z12st5cqekb4ujkbv04ciddjhwrgsnu5uxk0k/people/plusoners"
+    },
+    "resharers": {
+     "totalItems": 0,
+     "selfLink": "https://content.googleapis.com/plus/v1/activities/z12st5cqekb4ujkbv04ciddjhwrgsnu5uxk0k/people/resharers"
+    },
+    "attachments": [
+     {
+      "objectType": "article",
+      "displayName": "Project Sidologie - JARRE style Commodore 64 music remixes by C64Audio.com — Kickstarter",
+      "content": "C64Audio.com is raising funds for Project Sidologie - JARRE style Commodore 64 music remixes on Kickstarter! \n\n Project Sidologie by Marcel Donné - this luxury box set evokes classic JARRE using C64 music remixes, and offers stems and samples too.",
+      "url": "http://kck.st/1JFZoVL",
+      "image": {
+       "url": "https://lh3.googleusercontent.com/proxy/DMyniecK1HpRBljntWAtYGQAJU1KcTwNvJatUqDdMwcWKkO1CbwihMlrpIpQ9-8uQktIADsW97l2bqA_e87OTl9JIwXueILTufHQE3Z5cZ9_-kLj5USc9O8periyS8e2V4d7j0e91Db5EO-cAkQA7szUNHM_lW0CpJahxIDlldA_tUZ0shoLkQh0W9JbVZGrLFjgWW9Bv2iHsdjquR7xlCzK_eU=w506-h303-p",
+       "type": "image/jpeg",
+       "height": 303,
+       "width": 506
+      },
+      "fullImage": {
+       "url": "https://ksr-ugc.imgix.net/projects/1577668/photo-original.jpg?v=1428622525&w=640&h=480&fit=crop&auto=format&q=92&s=e27ac85e53047101156918c07280b4db",
+       "type": "image/jpeg"
+      }
+     }
+    ]
+   },
+   "provider": {
+    "title": "Google+"
+   },
+   "access": {
+    "kind": "plus#acl",
+    "description": "Public",
+    "items": [
+     {
+      "type": "public"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "plus#activity",
+   "etag": "\"RqKWnRU4WW46-6W3rWhLR9iFZQM/M4_ETjAJ69n602MszhVR2FigftA\"",
+   "title": "+Sven Ruppert Spielen mit Murmelbahnen.\n\n#Arduino #Fritzing  ",
+   "published": "2015-02-13T21:12:27.099Z",
+   "updated": "2015-02-13T21:14:01.000Z",
+   "id": "z12rsvireza4hr5ny23mefvj5va4ylirg04",
+   "url": "https://plus.google.com/+MichaelKoch0/posts/N75bJF9eLpN",
+   "actor": {
+    "id": "106550818727370453007",
+    "displayName": "Michael Koch",
+    "url": "https://plus.google.com/106550818727370453007",
+    "image": {
+     "url": "https://lh3.googleusercontent.com/-DVexAMJSYYY/AAAAAAAAAAI/AAAAAAAAA6w/AHDxvkrL9lE/photo.jpg?sz=50"
+    }
+   },
+   "verb": "post",
+   "object": {
+    "objectType": "note",
+    "content": "<span class=\"proflinkWrapper\"><span class=\"proflinkPrefix\">+</span><a class=\"proflink\" href=\"https://plus.google.com/104970729856616273826\" oid=\"104970729856616273826\">Sven Ruppert</a></span> Spielen mit Murmelbahnen.<br /><br /> <a rel=\"nofollow\" class=\"ot-hashtag\" href=\"https://plus.google.com/s/%23Arduino\">#Arduino</a>   <a rel=\"nofollow\" class=\"ot-hashtag\" href=\"https://plus.google.com/s/%23Fritzing\">#Fritzing</a>  \ufeff",
+    "url": "https://plus.google.com/+MichaelKoch0/posts/N75bJF9eLpN",
+    "replies": {
+     "totalItems": 0,
+     "selfLink": "https://content.googleapis.com/plus/v1/activities/z12rsvireza4hr5ny23mefvj5va4ylirg04/comments"
+    },
+    "plusoners": {
+     "totalItems": 2,
+     "selfLink": "https://content.googleapis.com/plus/v1/activities/z12rsvireza4hr5ny23mefvj5va4ylirg04/people/plusoners"
+    },
+    "resharers": {
+     "totalItems": 0,
+     "selfLink": "https://content.googleapis.com/plus/v1/activities/z12rsvireza4hr5ny23mefvj5va4ylirg04/people/resharers"
+    },
+    "attachments": [
+     {
+      "objectType": "video",
+      "displayName": "Arduino / Processing -based marble run timer with video overlay",
+      "content": "I've put switches at the start and end of the track of my son's Fischertechnik Dynamic marble run to measure the run time. The Arduino board is from the Frit...",
+      "url": "http://www.youtube.com/watch?v=2_CHgmET9PY",
+      "image": {
+       "url": "https://lh6.googleusercontent.com/proxy/S9vlRKR_9mMSgPB7gV6sepdgaO94frg5Oey20MlZYVvl_Ahy4V1vePfBQOxH8RMcGIKVAlSiUWCNtoxDmb4dPg=w506-h379",
+       "type": "image/jpeg",
+       "height": 379,
+       "width": 506
+      },
+      "embed": {
+       "url": "https://www.youtube.com/embed/2_CHgmET9PY",
+       "type": "application/x-shockwave-flash"
+      }
+     }
+    ]
+   },
+   "provider": {
+    "title": "Google+"
+   },
+   "access": {
+    "kind": "plus#acl",
+    "description": "Public",
+    "items": [
+     {
+      "type": "public"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "plus#activity",
+   "etag": "\"RqKWnRU4WW46-6W3rWhLR9iFZQM/mEg85ZGMRsHSuFZKADceF0tRYak\"",
+   "title": "We've brainstormed a bundle worth over $300 in the Humble Brainiac Book Bundle Presented by No Starch...",
+   "published": "2015-02-11T20:31:53.448Z",
+   "updated": "2015-02-11T20:31:53.448Z",
+   "id": "z12xxplokozhhxl1323mefvj5va4ylirg04",
+   "url": "https://plus.google.com/+MichaelKoch0/posts/6wkiUsfdgFL",
+   "actor": {
+    "id": "106550818727370453007",
+    "displayName": "Michael Koch",
+    "url": "https://plus.google.com/106550818727370453007",
+    "image": {
+     "url": "https://lh3.googleusercontent.com/-DVexAMJSYYY/AAAAAAAAAAI/AAAAAAAAA6w/AHDxvkrL9lE/photo.jpg?sz=50"
+    }
+   },
+   "verb": "share",
+   "object": {
+    "objectType": "activity",
+    "id": "z12eg3myamyhcrdb304cjpszqoqyuxfbops0k",
+    "actor": {
+     "id": "103555773917939181320",
+     "displayName": "Humble Bundle",
+     "url": "https://plus.google.com/103555773917939181320",
+     "image": {
+      "url": "https://lh3.googleusercontent.com/-sO7LWQxUK-o/AAAAAAAAAAI/AAAAAAAADYA/lBUT3EePmxU/photo.jpg?sz=50"
+     }
+    },
+    "content": "We&#39;ve brainstormed a bundle worth over $300 in the Humble Brainiac Book Bundle Presented by No Starch Press featuring LEGO, science, and even manga guides that simultaneously teach and entertain! <br /><br /><a href=\"http://bit.ly/HBBrainiac\">http://bit.ly/HBBrainiac</a><br /><br />In addition to all the brain-tastic books this bundle was already offering, now you can add The Manga Guide to Calculus, Beautiful LEGO, and LEGO Build-It Book, Vol. 1: Amazing Vehicles to that list!\ufeff",
+    "url": "https://plus.google.com/+HumbleBundle/posts/f1vL5Mn5Us5",
+    "replies": {
+     "totalItems": 0,
+     "selfLink": "https://content.googleapis.com/plus/v1/activities/z12xxplokozhhxl1323mefvj5va4ylirg04/comments"
+    },
+    "plusoners": {
+     "totalItems": 0,
+     "selfLink": "https://content.googleapis.com/plus/v1/activities/z12xxplokozhhxl1323mefvj5va4ylirg04/people/plusoners"
+    },
+    "resharers": {
+     "totalItems": 0,
+     "selfLink": "https://content.googleapis.com/plus/v1/activities/z12xxplokozhhxl1323mefvj5va4ylirg04/people/resharers"
+    },
+    "attachments": [
+     {
+      "objectType": "photo",
+      "displayName": "We've brainstormed a bundle worth over $300 in the Humble Brainiac Book Bundle Presented by No Starch Press featuring LEGO, science, and even manga guides that simultaneously teach and entertain!\n\nhttp://bit.ly/HBBrainiac\n\nIn addition to all the brain-tastic books this bundle was already offering, now you can add The Manga Guide to Calculus, Beautiful LEGO, and LEGO Build-It Book, Vol. 1: Amazing Vehicles to that list!",
+      "id": "103555773917939181320.6114664285747206130",
+      "content": "44743521-b677-4c15-a61f-e6d93cc4d390",
+      "url": "https://plus.google.com/photos/103555773917939181320/albums/6114664288392219425/6114664285747206130",
+      "image": {
+       "url": "https://lh3.googleusercontent.com/-r_VqAEN8uGE/VNumxWC61_I/AAAAAAAAHe8/SuU2WNBWoYY/w506-h750/44743521-b677-4c15-a61f-e6d93cc4d390",
+       "type": "image/jpeg"
+      },
+      "fullImage": {
+       "url": "https://lh3.googleusercontent.com/-r_VqAEN8uGE/VNumxWC61_I/AAAAAAAAHe8/SuU2WNBWoYY/w1200-h918/44743521-b677-4c15-a61f-e6d93cc4d390",
+       "type": "image/jpeg",
+       "height": 918,
+       "width": 1200
+      }
+     }
+    ]
+   },
+   "provider": {
+    "title": "Reshared Post"
+   },
+   "access": {
+    "kind": "plus#acl",
+    "description": "Public",
+    "items": [
+     {
+      "type": "public"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "plus#activity",
+   "etag": "\"RqKWnRU4WW46-6W3rWhLR9iFZQM/n-CTtvaUMASHv_RSGc6i4EcPgo0\"",
+   "title": "\"If I had to pick a bug in the Raspberry Pi,\" Eben remarked this morning, \"excessive sensitivity to ...",
+   "published": "2015-02-09T17:16:31.596Z",
+   "updated": "2015-02-09T17:16:31.596Z",
+   "id": "z131hju4exzvxhva004ciddjhwrgsnu5uxk0k",
+   "url": "https://plus.google.com/+MichaelKoch0/posts/ZFstdgbqPPo",
+   "actor": {
+    "id": "106550818727370453007",
+    "displayName": "Michael Koch",
+    "url": "https://plus.google.com/106550818727370453007",
+    "image": {
+     "url": "https://lh3.googleusercontent.com/-DVexAMJSYYY/AAAAAAAAAAI/AAAAAAAAA6w/AHDxvkrL9lE/photo.jpg?sz=50"
+    }
+   },
+   "verb": "share",
+   "object": {
+    "objectType": "activity",
+    "id": "z13tihkgrwnhelqpt04cddjxnnybdhh4vgk",
+    "actor": {
+     "id": "107182636490355951240",
+     "displayName": "Raspberry Pi",
+     "url": "https://plus.google.com/107182636490355951240",
+     "image": {
+      "url": "https://lh3.googleusercontent.com/-m88dpWcWBI4/AAAAAAAAAAI/AAAAAAAAAz0/vOyFkER9xpQ/photo.jpg?sz=50"
+     }
+    },
+    "content": "&quot;If I had to pick a bug in the Raspberry Pi,&quot; Eben remarked this morning, &quot;excessive sensitivity to paparazzi is the one I would pick.&quot;<br /><br />We&#39;ve discovered that a REALLY high-intensity burst of light, like a xenon flash or a laser pointer, can make your Pi 2 crash or reboot; bright sunlight, indoor lighting and even other types of flash don&#39;t, and there are no lasting ill effects to the Pi (although your SD card might become corrupted, so don&#39;t try it out for fun unless you&#39;re willing to risk that). Find out about the photoelectric effect and about easy work-arounds using such common materials as Blu-tack, Sugru or bread (really) in our blog post: <a href=\"http://www.raspberrypi.org/xenon-death-flash-a-free-physics-lesson/.\">http://www.raspberrypi.org/xenon-death-flash-a-free-physics-lesson/.</a>\ufeff",
+    "url": "https://plus.google.com/+raspberrypi/posts/Y4aUA73Vi8R",
+    "replies": {
+     "totalItems": 1,
+     "selfLink": "https://content.googleapis.com/plus/v1/activities/z131hju4exzvxhva004ciddjhwrgsnu5uxk0k/comments"
+    },
+    "plusoners": {
+     "totalItems": 0,
+     "selfLink": "https://content.googleapis.com/plus/v1/activities/z131hju4exzvxhva004ciddjhwrgsnu5uxk0k/people/plusoners"
+    },
+    "resharers": {
+     "totalItems": 0,
+     "selfLink": "https://content.googleapis.com/plus/v1/activities/z131hju4exzvxhva004ciddjhwrgsnu5uxk0k/people/resharers"
+    },
+    "attachments": [
+     {
+      "objectType": "article",
+      "displayName": "Xenon Death Flash: a free physics lesson | Raspberry Pi",
+      "content": "If you own a Raspberry Pi 2, congratulations: you're also the proud owner of an elegant demonstration of the photoelectric effect! At the weekend, Peter Onion, a veteran of our forums and of Raspberry Jams in Cambridge, Bletchley and surrounding areas (visible, costumed, in the background of ...",
+      "url": "http://www.raspberrypi.org/xenon-death-flash-a-free-physics-lesson",
+      "image": {
+       "url": "https://lh4.googleusercontent.com/proxy/Msafc8r0_YQifCDK14gtXjF6HbhQZQlJPSm-W05-dV1mNMAlXJ4YYYHYiv02O-AQd-u5TH-kvlvahjtQB3LY8oo05yTR1vGzJCW6SqT_hrLo0jAkgqxxHaBAwJl9jYN0eYE9o10VDc2DfibQMfebAdLTxw=w506-h303-p",
+       "type": "image/jpeg",
+       "height": 303,
+       "width": 506
+      },
+      "fullImage": {
+       "url": "http://www.raspberrypi.org/wp-content/uploads/2015/02/RTOScreenshot_2015-02-09_0_114955-500x375.png",
+       "type": "image/jpeg"
+      }
+     }
+    ]
+   },
+   "provider": {
+    "title": "Reshared Post"
+   },
+   "access": {
+    "kind": "plus#acl",
+    "description": "Public",
+    "items": [
+     {
+      "type": "public"
+     }
+    ]
+   }
+  }
+ ]
+}

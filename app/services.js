@@ -9,9 +9,7 @@ twitterplusServices.factory('Twitter', [ '$resource',
               return $resource('examples/twitter-example.json?screen_name=:twitter', {}, { 'get':  {method:'GET', isArray:true} });
           }]);
 
-twitterplusServices.factory('GooglePlus', 
-          function() {
-              return {
-                  
-              };
-          });
+twitterplusServices.factory('GooglePlus',  [ '$resource',
+          function($resource) {
+              return $resource('examples/googleplus-example.json?userId=:googleplus');
+          }]);
