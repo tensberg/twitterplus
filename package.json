@@ -1,9 +1,9 @@
 {
-  "name": "angular-seed",
+  "name": "twitterplus",
   "private": true,
   "version": "0.0.0",
-  "description": "A starter project for AngularJS",
-  "repository": "https://github.com/angular/angular-seed",
+  "description": "Integrated view of Twitter and Google+ feeds",
+  "repository": "https://github.com/tensberg/twitterplus",
   "license": "MIT",
   "devDependencies": {
     "karma": "~0.10",

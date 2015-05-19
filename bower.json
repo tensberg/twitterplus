@@ -1,8 +1,8 @@
 {
-  "name": "angular-seed",
-  "description": "A starter project for AngularJS",
+  "name": "twitterplus",
+  "description": "integrated view of Twitter and Google+ feeds",
   "version": "0.0.0",
-  "homepage": "https://github.com/angular/angular-seed",
+  "homepage": "https://github.com/tensberg/twitterplus",
   "license": "MIT",
   "private": true,
   "dependencies": {
@@ -10,6 +10,6 @@
     "angular-route": "1.2.x",
     "angular-loader": "1.2.x",
     "angular-mocks": "~1.2.x",
-    "html5-boilerplate": "~4.3.0"
+    "bootstrap": "~3.1.1"
   }
 }
