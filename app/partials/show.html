@@ -1,8 +1,20 @@
-<div>
-<div class="twitterstream">
+<div class="row">
+<div class="twitterstream col-md-6">
 <h3>Twitter stream for {{twitter}}</h3>
+    <div class="tweet panel panel-default" ng-repeat="tweet in twitterStream">
+        <div class="panel-heading"><h5 class="panel-title">{{tweet.created_at}}</h5></div>
+        <div class="panel-body">
+            <div class="well">{{tweet.text}}</div>
+            <ul>
+            <li>Retweets: {{tweet.retweet_count}}</li>
+            </ul>
+        </div>
+    </div>
 </div>
-<div class="googleplusstream">
+<div class="googleplusstream col-md-6">
 <h3>Google+ stream for {{googleplus}}</h3>
+</div>
+<div>
+<button class="btn btn-primary" type="submit" ng-click="reload()">Reload</button>
 </div>
 </div>

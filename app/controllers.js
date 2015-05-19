@@ -10,7 +10,7 @@ twitterplusControllers.controller('SelectAccountsCtrl', ['$scope', '$rootScope',
             $scope.showStreams = function() {
                   $rootScope.accounts = {
                       twitter: $scope.twitter,
-                      googleplus: $scope.googlePlus,
+                      googleplus: $scope.googleplus,
                     };
                   $location.path('show');
               };
@@ -24,5 +24,12 @@ twitterplusControllers.controller('ShowStreamsCtrl', ['$scope', '$rootScope', 'T
         function($scope, $rootScope, Twitter, GooglePlus) {
                 $scope.twitter = $rootScope.accounts.twitter;
                 $scope.googleplus = $rootScope.accounts.googleplus;
+                
+                var reload = function() {
+                      $scope.twitterStream = Twitter.get({twitter:$scope.twitter});
+                      };
+                      
+                $scope.reload = reload;
+                reload();
            }]);
 
