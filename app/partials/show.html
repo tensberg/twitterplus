@@ -1,12 +1,12 @@
 <div class="row">
 <div class="twitterstream col-md-6">
 <h3>Twitter stream for {{twitter}}</h3>
-    <div class="tweet panel panel-default" ng-repeat="tweet in twitterStream">
-        <div class="panel-heading"><h5 class="panel-title">{{tweet.created_at}}</h5></div>
+    <div class="tweet panel panel-default" ng-repeat="item in twitterStream">
+        <div class="panel-heading"><h5 class="panel-title">{{item.created}}</h5></div>
         <div class="panel-body">
-            <div class="well">{{tweet.text}}</div>
+            <div class="well">{{item.tweet.text}}</div>
             <ul>
-            <li>Retweets: {{tweet.retweet_count}}</li>
+            <li>Retweets: {{item.tweet.retweet_count}}</li>
             </ul>
         </div>
     </div>

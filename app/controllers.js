@@ -22,11 +22,14 @@ twitterplusControllers.controller('SelectAccountsCtrl', ['$scope', '$rootScope',
 
 twitterplusControllers.controller('ShowStreamsCtrl', ['$scope', '$rootScope', 'Twitter', 'GooglePlus',
         function($scope, $rootScope, Twitter, GooglePlus) {
-                $scope.twitter = $rootScope.accounts.twitter || 'Twitter Demo';
-                $scope.googleplus = $rootScope.accounts.googleplus || 'Google+ Demo';
+                $scope.twitter = $rootScope.accounts !== undefined ? $rootScope.accounts.twitter : 'Twitter Demo';
+                $scope.googleplus = $rootScope.accounts !== undefined ? $rootScope.accounts.googleplus : 'Google+ Demo';
                 
                 var reload = function() {
-                      $scope.twitterStream = Twitter.get({twitter:$scope.twitter});
+                      $scope.twitterStream = [];
+                      Twitter.get({twitter:$scope.twitter}, function(tweets) { 
+                          $scope.twitterStream = $scope.twitterStream.concat(tweets);
+                      });
                       $scope.googleplusStream = GooglePlus.get({googleplus:$scope.googleplus});
                       };
                       
