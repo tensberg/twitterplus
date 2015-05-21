@@ -15,9 +15,8 @@ Todo:
 
 * Nicer page formatting.
 * Sort results by date.
-* Unit tests.
-* Continuous integration with Travis CI.
-* Integration tests.
+* Improve unit test coverage.
+* Improve E2E test coverage.
 * Real API access using OAuth.
-* Implement API access on server side so that secrets don't leak to client.
+* Implement API access on server side so that OAuth secrets don't leak to client.
 * Post Tweets to Google+ and vice versa.
