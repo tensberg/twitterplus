@@ -4,6 +4,8 @@ Integrated view of Twitter and Google+ feeds.
 
 Toy project for learning AngularJS.
 
+[![Build Status](https://travis-ci.org/tensberg/twitterplus.svg?branch=master)](https://travis-ci.org/tensberg/twitterplus)
+
 To try out:
 
 1. `npm install`
