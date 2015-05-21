@@ -11,7 +11,7 @@ twitterplusServices.factory('Twitter', [ '$http',
                     return $http.get('examples/twitter-example.json?screen_name=:screenName').then(function(twitterStream) {
                         var stream = twitterStream.data.map(function(tweet) {
                             return {
-                                created: Date.parse(tweet.created_at),
+                                created: new Date(tweet.created_at),
                                 'tweet': tweet
                             };
                         });
@@ -28,7 +28,7 @@ twitterplusServices.factory('GooglePlus',  [ '$http',
                     return $http.get('examples/googleplus-example.json?userId=:googleplus').then(function(googleplusStream) {
                         var stream = googleplusStream.data.items.map(function(activity) {
                             return {
-                                created: Date.parse(activity.published),
+                                created: new Date(activity.published),
                                 googleplus: activity
                             };
                         });

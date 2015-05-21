@@ -1,31 +1,61 @@
-<div class="row">
-<div class="twitterstream col-md-6">
-<h3>Twitter stream for {{twitter}}</h3>
-    <div class="tweet panel panel-default" ng-repeat="item in stream | filter:hasTweet">
-        <div class="panel-heading"><h5 class="panel-title">{{item.created | date:'shortDate'}} {{item.created | date:'mediumTime'}}</h5></div>
-        <div class="panel-body">
-            <div class="well">{{item.tweet.text}}</div>
-            <ul>
-            <li>Retweets: {{item.tweet.retweet_count}}</li>
-            </ul>
-        </div>
-    </div>
+<div>
+View Mode:
+<select ng-model="viewMode">
+  <option value="unified">unified</option>
+  <option value="sidebyside">side by side</option>
+</select>
 </div>
-<div class="googleplusstream col-md-6">
-<h3>Google+ stream for {{googleplus}}</h3>
-    <div class="googleplusactivity panel panel-default" ng-repeat="item in stream | filter:hasGoogleplus">
-        <div class="panel-heading"><h5 class="panel-title">{{item.created | date:'shortDate'}} {{item.created | date:'mediumTime'}}</h5></div>
-        <div class="panel-body">
-            <div class="well" ng-if="item.googleplus.title">{{item.googleplus.title}}</div>
-            <div class="well" ng-repeat="attachment in item.googleplus.object.attachments">
-            <h4>{{attachment.displayName}}</h4>
-            <p>{{attachment.content}}</p>
-            <a href="{{attachment.url}}"><img ng-src="{{attachment.image.url}}"></a>
+<div class="row" ng-switch on="viewMode">
+    <div ng-switch-when="unified">
+        <h3>Unified stream for {{twitter}} and {{googleplus}}</h3>
+        <div class="unified panel panel-default" ng-repeat="item in stream | orderBy:created">
+            <div class="panel-heading"><h5 class="panel-title">{{item.created | date:'shortDate'}} {{item.created | date:'mediumTime'}}</h5></div>
+            <div class="panel-body" ng-if="hasTweet(item)">
+                <div class="well">{{item.tweet.text}}</div>
+                <ul>
+                <li>Retweets: {{item.tweet.retweet_count}}</li>
+                </ul>
+            </div>
+            <div class="panel-body" ng-if="hasGoogleplus(item)">
+                <div class="well" ng-if="item.googleplus.title">{{item.googleplus.title}}</div>
+                <div class="well" ng-repeat="attachment in item.googleplus.object.attachments">
+                <h4>{{attachment.displayName}}</h4>
+                <p>{{attachment.content}}</p>
+                <a href="{{attachment.url}}"><img ng-src="{{attachment.image.url}}"></a>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<div>
-<button class="btn btn-primary" type="submit" ng-click="reload()">Reload</button>
-</div>
+    <div ng-switch-default>
+        <div class="twitterstream col-md-6">
+        <h3>Twitter stream for {{twitter}}</h3>
+            <div class="tweet panel panel-default" ng-repeat="item in stream | filter:hasTweet">
+                <div class="panel-heading"><h5 class="panel-title">{{item.created | date:'shortDate'}} {{item.created | date:'mediumTime'}}</h5></div>
+                <div class="panel-body">
+                    <div class="well">{{item.tweet.text}}</div>
+                    <ul>
+                    <li>Retweets: {{item.tweet.retweet_count}}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="googleplusstream col-md-6">
+        <h3>Google+ stream for {{googleplus}}</h3>
+            <div class="googleplusactivity panel panel-default" ng-repeat="item in stream | filter:hasGoogleplus">
+                <div class="panel-heading"><h5 class="panel-title">{{item.created | date:'shortDate'}} {{item.created | date:'mediumTime'}}</h5></div>
+                <div class="panel-body">
+                    <div class="well" ng-if="item.googleplus.title">{{item.googleplus.title}}</div>
+                    <div class="well" ng-repeat="attachment in item.googleplus.object.attachments">
+                    <h4>{{attachment.displayName}}</h4>
+                    <p>{{attachment.content}}</p>
+                    <a href="{{attachment.url}}"><img ng-src="{{attachment.image.url}}"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+        <button class="btn btn-primary" type="submit" ng-click="reload()">Reload</button>
+        </div>
+        </div>
+    </div>
 </div>
