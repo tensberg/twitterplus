@@ -27,11 +27,14 @@ twitterplusControllers.controller('ShowStreamsCtrl', ['$scope', '$rootScope', 'T
                 
                 var reload = function() {
                       $scope.twitterStream = [];
-                      Twitter.get({twitter:$scope.twitter}, function(tweets) { 
+                      Twitter.get($scope.twitter, function(tweets) { 
                           $scope.twitterStream = $scope.twitterStream.concat(tweets);
                       });
-                      $scope.googleplusStream = GooglePlus.get({googleplus:$scope.googleplus});
-                      };
+                      $scope.googleplusStream = [];
+                      GooglePlus.get($scope.googleplus, function(tweets) { 
+                          $scope.googleplusStream = $scope.googleplusStream.concat(tweets);
+                      });
+                  };
                       
                 $scope.reload = reload;
                 reload();

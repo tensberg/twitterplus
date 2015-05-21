@@ -2,7 +2,7 @@
 
 /* Services */
 
-var twitterplusServices = angular.module('twitterplus.services', ['ngResource']);
+var twitterplusServices = angular.module('twitterplus.services', []);
 
 twitterplusServices.factory('Twitter', [ '$http',
           function($http) {
@@ -21,7 +21,19 @@ twitterplusServices.factory('Twitter', [ '$http',
               };
           }]);
 
-twitterplusServices.factory('GooglePlus',  [ '$resource',
-          function($resource) {
-              return $resource('examples/googleplus-example.json?userId=:googleplus');
+twitterplusServices.factory('GooglePlus',  [ '$http',
+          function($http) {
+            return {
+                get: function(googleplus, successFunc) {
+                    return $http.get('examples/googleplus-example.json?userId=:googleplus').then(function(googleplusStream) {
+                        var stream = googleplusStream.data.items.map(function(activity) {
+                            return {
+                                created: Date.parse(activity.published),
+                                googleplus: activity
+                            };
+                        });
+                        successFunc(stream);
+                    });
+                  }
+                }
           }]);
