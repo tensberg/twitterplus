@@ -1,8 +1,8 @@
 <div class="row">
 <div class="twitterstream col-md-6">
 <h3>Twitter stream for {{twitter}}</h3>
-    <div class="tweet panel panel-default" ng-repeat="item in twitterStream">
-        <div class="panel-heading"><h5 class="panel-title">{{item.created}}</h5></div>
+    <div class="tweet panel panel-default" ng-repeat="item in stream | filter:hasTweet">
+        <div class="panel-heading"><h5 class="panel-title">{{item.created | date:'shortDate'}} {{item.created | date:'mediumTime'}}</h5></div>
         <div class="panel-body">
             <div class="well">{{item.tweet.text}}</div>
             <ul>
@@ -13,8 +13,8 @@
 </div>
 <div class="googleplusstream col-md-6">
 <h3>Google+ stream for {{googleplus}}</h3>
-    <div class="googleplusactivity panel panel-default" ng-repeat="item in googleplusStream">
-        <div class="panel-heading"><h5 class="panel-title">{{item.created}}</h5></div>
+    <div class="googleplusactivity panel panel-default" ng-repeat="item in stream | filter:hasGoogleplus">
+        <div class="panel-heading"><h5 class="panel-title">{{item.created | date:'shortDate'}} {{item.created | date:'mediumTime'}}</h5></div>
         <div class="panel-body">
             <div class="well" ng-if="item.googleplus.title">{{item.googleplus.title}}</div>
             <div class="well" ng-repeat="attachment in item.googleplus.object.attachments">

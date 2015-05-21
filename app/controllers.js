@@ -25,14 +25,21 @@ twitterplusControllers.controller('ShowStreamsCtrl', ['$scope', '$rootScope', 'T
                 $scope.twitter = $rootScope.accounts !== undefined ? $rootScope.accounts.twitter : 'Twitter Demo';
                 $scope.googleplus = $rootScope.accounts !== undefined ? $rootScope.accounts.googleplus : 'Google+ Demo';
                 
+                $scope.hasTweet = function(item) {
+                    return item.tweet !== undefined;
+                };
+                
+                $scope.hasGoogleplus = function(item) {
+                    return item.googleplus !== undefined;
+                };
+                
                 var reload = function() {
-                      $scope.twitterStream = [];
+                      $scope.stream = [];
                       Twitter.get($scope.twitter, function(tweets) { 
-                          $scope.twitterStream = $scope.twitterStream.concat(tweets);
+                          $scope.stream = $scope.stream.concat(tweets);
                       });
-                      $scope.googleplusStream = [];
                       GooglePlus.get($scope.googleplus, function(tweets) { 
-                          $scope.googleplusStream = $scope.googleplusStream.concat(tweets);
+                          $scope.stream = $scope.stream.concat(tweets);
                       });
                   };
                       
