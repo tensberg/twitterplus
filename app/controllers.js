@@ -23,6 +23,7 @@ twitterplusControllers.controller('SelectAccountsCtrl', ['$scope', '$rootScope',
 twitterplusControllers.controller('ShowStreamsCtrl', ['$scope', '$rootScope', 'Twitter', 'GooglePlus',
         function($scope, $rootScope, Twitter, GooglePlus) {
                 $scope.viewMode = 'unified';
+                $scope.newestFirst = true;
         
                 $scope.twitter = $rootScope.accounts !== undefined ? $rootScope.accounts.twitter : 'Twitter Demo';
                 $scope.googleplus = $rootScope.accounts !== undefined ? $rootScope.accounts.googleplus : 'Google+ Demo';
@@ -49,3 +50,11 @@ twitterplusControllers.controller('ShowStreamsCtrl', ['$scope', '$rootScope', 'T
                 reload();
            }]);
 
+twitterplusControllers.directive('streamitem', 
+        function() {
+            return {
+                restrict: 'E',
+                scope: { item : '=' },
+                templateUrl: 'partials/streamitem.html'
+            };
+        });

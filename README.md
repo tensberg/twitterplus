@@ -16,7 +16,6 @@ To try out:
 Todo:
 
 * Nicer page formatting.
-* Sort results by date.
 * Improve unit test coverage.
 * Improve E2E test coverage.
 * Real API access using OAuth.
