@@ -8,9 +8,10 @@
     </div>
 
     <div class="panel-body" ng-if="item.hasTweet()">
+        <div><img ng-src="{{item.tweet.user.profile_image_url_https}}"></img>{{item.tweet.user.name}} wrote:</div>
         <div class="well">{{item.tweet.text}}</div>
         <ul>
-        <li>Retweets: {{item.tweet.retweet_count}}</li>
+        <li>{{item.tweet.retweet_count}} retweets</li>
         </ul>
     </div>
     <div class="panel-body" ng-if="item.hasGoogleplus()">
@@ -21,5 +22,4 @@
         <a href="{{attachment.url}}"><img ng-src="{{attachment.image.url}}"></a>
         </div>
     </div>
-</div>
 </div>
