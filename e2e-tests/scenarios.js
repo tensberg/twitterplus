@@ -4,7 +4,7 @@
 
 describe('Twitter+', function() {
 
-  browser.get('index.html');
+  browser.get('');
 
   it('should automatically redirect to /select when location hash/fragment is empty', function() {
     expect(browser.getLocationAbsUrl()).toMatch("/select");
@@ -14,12 +14,12 @@ describe('Twitter+', function() {
   describe('select', function() {
 
     beforeEach(function() {
-      browser.get('index.html#/select');
+      browser.get('#/select');
     });
 
 
     it('should render the account select when user navigates to /select', function() {
-      expect(element.all(by.css('[ng-view] div div')).first().getText()).
+      expect(element.all(by.css('[ng-view] form div label')).first().getText()).
         toMatch(/Twitter handle/);
     });
 
