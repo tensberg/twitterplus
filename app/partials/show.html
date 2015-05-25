@@ -1,33 +1,41 @@
-<div>
-View Mode:
-<select ng-model="viewMode">
-  <option value="unified">unified</option>
-  <option value="sidebyside">side by side</option>
-</select>
-<input type="checkbox" ng-model="newestFirst">newest first</input>
-</div>
+<nav class="navbar navbar-default">
+    <form class="navbar-form navbar-left"
+        <div class="form-group">
+            <label for="viewMode">View Mode</label>
+            <select id="viewMode" ng-model="viewMode">
+                <option value="unified">unified</option>
+                <option value="sidebyside">side by side</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label><input type="checkbox" ng-model="newestFirst">newest first</label>
+        </div>
+    </form>
+    <form class="navbar-form navbar-right">
+        <button class="btn" type="submit" ng-click="reload()">Reload</button>
+        <button class="btn btn-primary" type="submit" ng-click="showSelect()">New</button>
+    </form>
+</nav>
+
 <div class="row" ng-switch on="viewMode">
     <div class="col-md-12" ng-switch-when="unified">
-        <h3>Unified stream for {{twitter}} and {{googleplus}}</h3>
+        <h4>Unified stream for {{twitter}} and {{googleplus}}</h4>
         <div ng-repeat="item in stream | orderBy:'created':newestFirst">
             <streamitem item="item"></streamitem>
         </div>
    </div>
     <div ng-switch-default>
         <div class="twitterstream col-md-6">
-        <h3>Twitter stream for {{twitter}}</h3>
+        <h4>Twitter stream for {{twitter}}</h4>
             <div class="tweet" ng-repeat="item in stream | filter:hasTweet | orderBy:'created':newestFirst">
                 <streamitem item="item"></streamitem>
             </div>
         </div>
         <div class="googleplusstream col-md-6">
-        <h3>Google+ stream for {{googleplus}}</h3>
+        <h4>Google+ stream for {{googleplus}}</h4>
             <div class="googleplusactivity" ng-repeat="item in stream | filter:hasGoogleplus | orderBy:'created':newestFirst">
                 <streamitem item="item"></streamitem>
             </div>
-        </div>
-        <div>
-        <button class="btn btn-primary" type="submit" ng-click="reload()">Reload</button>
         </div>
         </div>
     </div>

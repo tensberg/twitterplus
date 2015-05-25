@@ -1,9 +1,11 @@
-<div>
-<div>
-Twitter handle: <input ng-model="twitter"><br>
-Google+ name: <input ng-model="googleplus">
-</div>
-<div>
-<button class="btn btn-default" type="submit" ng-disabled="!isShowEnabled()" ng-click="showStreams()">Show Streams</button>
-</div>
-</div>
+<form class="col-xs-3">
+    <div class="form-group">
+        <label for="twitterHandle">Twitter handle</label>
+        <input id="twitterHandle" class="form-control" ng-model="twitter" placeholder="_tensberg_"></input>
+    </div>
+    <div class="form-group">
+        <label for="googleplusName">Google+ name</label>
+        <input id="googleplusName" class="form-control" ng-model="googleplus" placeholder="tensberg@gmail.com"></input>
+    </div>
+    <button class="btn btn-primary" type="submit" ng-disabled="!isShowEnabled()" ng-click="showStreams()">Show Streams</button>
+</form>
