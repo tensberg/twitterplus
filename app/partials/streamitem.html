@@ -8,8 +8,19 @@
     </div>
 
     <div class="panel-body" ng-if="item.hasTweet()">
-        <div><img ng-src="{{item.tweet.user.profile_image_url_https}}"></img>{{item.tweet.user.name}} wrote:</div>
-        <div class="well">{{item.tweet.text}}</div>
+        <div ng-if="item.tweet.retweeted">
+            <div><img ng-src="{{item.tweet.retweeted_status.user.profile_image_url_https}}"></img>Retweet of {{item.tweet.retweeted_status.user.name}}:</div>
+            <div class="well">
+                <img ng-if="item.tweet.entities.media[0].media_url_https" ng-src="{{item.tweet.entities.media[0].media_url_https}}" 
+                     width="{{item.tweet.entities.media[0].sizes.small.w}}" height="{{item.tweet.entities.media[0].sizes.small.h}}"></img>
+                <br ng-if="item.tweet.entities.media[0].media_url_https">
+                {{item.tweet.retweeted_status.text}}
+            </div>
+        </div>
+        <div ng-if="!item.tweet.retweeted">
+            <div><img ng-src="{{item.tweet.user.profile_image_url_https}}"></img>{{item.tweet.user.name}} wrote:</div>
+            <div class="well">{{item.tweet.text}}</div>
+        </div>
         <ul>
         <li>{{item.tweet.retweet_count}} retweets</li>
         </ul>
