@@ -19,8 +19,9 @@ var twitterplusServices = angular.module('twitterplus.services', []);
 twitterplusServices.factory('Twitter', [ '$http',
           function($http) {
               return {
-                get: function(screenName, successFunc) {
-                    return $http.get('examples/twitter-example.json?screen_name=:screenName').then(function(twitterStream) {
+                get: function(demo, screenName, successFunc) {
+                    var url = demo ? 'examples/twitter-example.json': 'twittertimeline/' + screenName;
+                    return $http.get(url).then(function(twitterStream) {
                         var stream = twitterStream.data.map(function(tweet) {
                             var item = new Streamitem(new Date(tweet.created_at));
                             item.tweet = tweet;
