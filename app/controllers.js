@@ -2,6 +2,8 @@
 
 /* Controllers */
 
+var demoMode = true;
+
 var twitterplusControllers = angular.module('twitterplus.controllers', ['twitterplus.services']);
 
 twitterplusControllers.controller('SelectAccountsCtrl', ['$scope', '$rootScope', '$location',
@@ -25,8 +27,8 @@ twitterplusControllers.controller('ShowStreamsCtrl', ['$scope', '$rootScope', '$
                 $scope.viewMode = 'unified';
                 $scope.newestFirst = true;
         
-                $scope.twitter = $rootScope.accounts !== undefined ? $rootScope.accounts.twitter : 'Twitter Demo';
-                $scope.googleplus = $rootScope.accounts !== undefined ? $rootScope.accounts.googleplus : 'Google+ Demo';
+                $scope.twitter = $rootScope.accounts !== undefined ? $rootScope.accounts.twitter : '_tensberg_';
+                $scope.googleplus = $rootScope.accounts !== undefined ? $rootScope.accounts.googleplus : 'tensberg@gmail.com';
                 
                 $scope.hasTweet = function(item) {
                     return item.tweet !== undefined;
@@ -42,7 +44,7 @@ twitterplusControllers.controller('ShowStreamsCtrl', ['$scope', '$rootScope', '$
 
                 var reload = function() {
                       $scope.stream = [];
-                      Twitter.get(false, $scope.twitter, function(tweets) { 
+                      Twitter.get(demoMode, $scope.twitter, function(tweets) { 
                           $scope.stream = $scope.stream.concat(tweets);
                       });
                       GooglePlus.get($scope.googleplus, function(tweets) { 
